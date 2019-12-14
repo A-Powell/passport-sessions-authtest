@@ -128,6 +128,15 @@ app.post('/login', (req, res, next) => {
     })(req, res, next);
   })
 
+  app.get('/isauthenticated', (req, res) => {
+    console.log(req.isAuthenticated())
+    if(req.isAuthenticated()) {
+      res.send('Authenticated!')
+    } else {
+      res.send('Log in!')
+    }
+  })
+
 app.get('/authrequired', (req, res) => {
     console.log('Inside GET /authrequired callback')
     console.log(`User authenticated? ${req.isAuthenticated()}`)
