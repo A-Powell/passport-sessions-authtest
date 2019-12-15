@@ -2,7 +2,7 @@
 
 To run the server use `npm run dev:server` (localhost:3000) (/login)(/authrequired)
 
-To start the DB cd into db folder and rune `npm run json:server` It will run on localhost:5000 - (/users)(/users/1)
+To start the DB cd into db folder and run `npm run json:server` It will run on localhost:5000 - (/users)(/users/1)
 
 All tests were ran with cURL from the command line. 
 
